@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>ExamFjbasualdo</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>Joe's Pizza</title>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <%=link_to "Joe's Pizza", root_path, class: "navbar-brand"%>
+    </div>
+    <ul class="nav navbar-nav">
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+        <ul class="dropdown-menu" role="menu">
 
-  <body>
-    <%= yield %>
-  </body>
+        </ul>
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+
+
+    </ul>
+  </div>
+</nav>
+<% if notice %>
+  <div id="notice_wrapper">
+    <p class="notice"><%= notice %></p>
+  </div>
+<% elsif alert %>
+  <div id="alert_wrapper">
+    <p class="alert"><%= alert %></p>
+  </div>
+<% end %>
+<div class="container">
+  <%= yield %>
+</div>
+</body>
 </html>
+
+

@@ -6,8 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-    ingredients = Ingredient.create([{ name: 'mozzarella'}, { name: 'tomato'}, { name: 'pepperoni'}, { name: 'olives'},
+    Ingredient.create([{ name: 'mozzarella'}, { name: 'tomato'}, { name: 'pepperoni'}, { name: 'olives'},
                                      { name: 'onion'}, { name: 'artichokes'}, { name: 'mushrooms'}, { name: 'ham'},
                                      { name: 'shrimp'}])
 
+    
     

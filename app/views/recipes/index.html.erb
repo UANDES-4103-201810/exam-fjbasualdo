@@ -1,29 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Recipes</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Price</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<h1>Menu</h1>
+<div class="row" align="center">
 
   <tbody>
     <% @recipes.each do |recipe| %>
+    <div class="col-md-4" align="center">
       <tr>
-        <td><%= recipe.name %></td>
+        <td><%= link_to recipe.name, recipe %></td>
         <td><%= recipe.price %></td>
-        <td><%= link_to 'Show', recipe %></td>
-        <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
-        <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+
+
       </tr>
+    </div>
     <% end %>
   </tbody>
-</table>
 
+</div>
 <br>
 
 <%= link_to 'New Recipe', new_recipe_path %>
