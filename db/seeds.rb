@@ -11,4 +11,6 @@
                                      { name: 'shrimp'}])
 
     
-    
+    Recipe.create([{ name: 'Super Pepperoni', price: '$5000'},
+                   { name: 'BBQ Chicken', price: '$7000'},
+                   { name: 'Margarita', price: '$8000'}])
