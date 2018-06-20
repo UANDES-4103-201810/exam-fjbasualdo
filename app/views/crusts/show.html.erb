@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @crust.type %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @crust.price %>
+</p>
+
+<%= link_to 'Edit', edit_crust_path(@crust) %> |
+<%= link_to 'Back', crusts_path %>

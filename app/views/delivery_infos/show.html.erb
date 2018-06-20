@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Address1:</strong>
+  <%= @delivery_info.address1 %>
+</p>
+
+<p>
+  <strong>Address2:</strong>
+  <%= @delivery_info.address2 %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @delivery_info.phone %>
+</p>
+
+<%= link_to 'Edit', edit_delivery_info_path(@delivery_info) %> |
+<%= link_to 'Back', delivery_infos_path %>
